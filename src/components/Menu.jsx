@@ -9,7 +9,7 @@ const Menu = () => {
   const [open, setOpen] = useState(false);
   console.log(open);
   return (
-    <header className='h-[88px] w-full flex justify-between'>
+    <header className='h-[88px] lg:h-[136px] w-full flex justify-between lg:items-center'>
       <Logo />
       <Hamburger
         setOpen={setOpen}
@@ -19,7 +19,7 @@ const Menu = () => {
         open={open}
         setOpen={setOpen}
       />
-     <NavBar     />
+      <NavBar />
     </header>
   );
 };

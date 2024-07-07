@@ -4,7 +4,7 @@ export  function Logo() {
   return (
     <div className=' flex  items-center grow'>
       <img
-        className='size-10 ml-6 cursor-pointer '
+        className='size-10 ml-6 lg:ml-[64px] cursor-pointer '
         src={logo}
         alt='logo'
       />
