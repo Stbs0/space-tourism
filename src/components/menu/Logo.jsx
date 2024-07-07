@@ -1,5 +1,5 @@
-import logo from "../assets/shared/logo.svg";
-import line from "../assets/shared/line.svg";
+import logo from "../../assets/shared/logo.svg";
+import line from "../../assets/shared/line.svg";
 export  function Logo() {
   return (
     <div className=' flex  items-center grow'>

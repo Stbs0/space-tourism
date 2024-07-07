@@ -1,17 +1,7 @@
-import { Main } from "./components/Main";
-import { useState } from "react";
-import Menu from "./components/Menu";
-import "./App.css";
-
+import { RouterProvider } from "react-router-dom";
+import router from "./routers/routers";
 function App() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <>
-      <Menu />
-      <Main     />
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

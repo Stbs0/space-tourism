@@ -1,7 +1,7 @@
-import { ExploreBtn } from "./ExploreBtn";
-import { TextContent } from "./TextContent";
+import { ExploreBtn } from "../components/home/ExploreBtn";
+import { TextContent } from "../components/home/TextContent";
 
-export function Main() {
+function Home() {
   return (
     <main className='grow flex p-[24px] sm:px-[40px] sm:py-[128px]   lg:py-[128px]'>
       <div className=' grow flex  '>
@@ -13,3 +13,5 @@ export function Main() {
     </main>
   );
 }
+
+export default Home;

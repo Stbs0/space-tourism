@@ -1,4 +1,4 @@
-import hamburger from "../assets/shared/icon-hamburger.svg";
+import hamburger from "../../assets/shared/icon-hamburger.svg";
 export function Hamburger({ setOpen, open }) {
   return (
     <div className='grow flex sm:hidden justify-end  items-center mr-6'>

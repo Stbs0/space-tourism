@@ -1,4 +1,4 @@
-import Cancel from "../assets/shared/x-icon.svg";
+import Cancel from "../../assets/shared/x-icon.svg";
 import { NavLink } from "react-router-dom";
 export function MobileNav({ open, setOpen }) {
   return (
