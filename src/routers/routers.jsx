@@ -4,22 +4,29 @@ import HeaderLayout from "../layouts/HeaderLayout";
 import Destination from "../pages/Destination";
 import Crew from "../pages/Crew";
 import Technology from "../pages/Technology";
+import BackgroundWrapper from "../components/BackgroundWrapper";
+import { element } from "prop-types";
 const router = createBrowserRouter([
   {
-    element: <HeaderLayout />,
+    element: <BackgroundWrapper />,
     children: [
-      { index: true, path: "/", element: <Home /> },
       {
-        path: "/Destination",
-        element: <Destination />,
-      },
-      {
-        path: "/Crew",
-        element: <Crew />,
-      },
-      {
-        path: "/Technology",
-        element: <Technology />,
+        element: <HeaderLayout />,
+        children: [
+          { index: true, path: "/", element: <Home /> },
+          {
+            path: "/Destination",
+            element: <Destination />,
+          },
+          {
+            path: "/Crew",
+            element: <Crew />,
+          },
+          {
+            path: "/Technology",
+            element: <Technology />,
+          },
+        ],
       },
     ],
   },

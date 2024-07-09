@@ -6,7 +6,7 @@
 
 @layer base {
   #root {
-    @apply m-0 p-0 bg-fixed  min-w-full bg-cover  bg-home-mobile sm:bg-home-tablet lg:bg-home-desktop flex flex-col min-h-screen;
+    @apply m-0 p-0   min-w-full  flex flex-col min-h-screen;
   }
   .active {
     @apply text-left tracking-[2px];
