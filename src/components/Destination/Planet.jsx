@@ -4,7 +4,7 @@ import { PlanetDiscreption } from "./PlanetDiscreption";
 import { PlanetName } from "./PlanetName";
 import { PlanetList } from "./PlanetList";
 import { PlanetImg } from "./PlanetImg";
-const Planet = ({ planet }) => {
+const Planet = ({ planets }) => {
   return (
     <div className='flex gap-8 flex-col '>
       <PlanetImg />

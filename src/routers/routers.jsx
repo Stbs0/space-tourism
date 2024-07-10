@@ -17,6 +17,9 @@ const router = createBrowserRouter([
           {
             path: "/Destination",
             element: <Destination />,
+            loader: async () => {
+              return fetch("http://localhost:4000/destinations");
+            },
           },
           {
             path: "/Crew",
