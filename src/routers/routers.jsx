@@ -35,7 +35,15 @@ const router = createBrowserRouter([
           {
             path: "/Crew",
             element: <PageTransition />,
-            children: [{ index: true, element: <Crew /> }],
+            children: [
+              {
+                index: true,
+                element: <Crew />,
+                loader: async () => {
+                  return fetch("http://localhost:4000/crew");
+                },
+              },
+            ],
           },
           {
             path: "/Technology",
