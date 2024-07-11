@@ -6,6 +6,7 @@ import Crew from "../pages/Crew";
 import Technology from "../pages/Technology";
 import BackgroundWrapper from "../components/BackgroundWrapper";
 import { element } from "prop-types";
+import PageTransition from "../components/PageTransition";
 const router = createBrowserRouter([
   {
     element: <BackgroundWrapper />,
@@ -13,21 +14,33 @@ const router = createBrowserRouter([
       {
         element: <HeaderLayout />,
         children: [
-          { index: true, path: "/", element: <Home /> },
+          {
+            path: "/",
+            element: <PageTransition />,
+            children: [{ index: true, element: <Home /> }],
+          },
           {
             path: "/Destination",
-            element: <Destination />,
-            loader: async () => {
-              return fetch("http://localhost:4000/destinations");
-            },
+            element: <PageTransition />,
+            children: [
+              {
+                index: true,
+                element: <Destination />,
+                loader: async () => {
+                  return fetch("http://localhost:4000/destinations");
+                },
+              },
+            ],
           },
           {
             path: "/Crew",
-            element: <Crew />,
+            element: <PageTransition />,
+            children: [{ index: true, element: <Crew /> }],
           },
           {
             path: "/Technology",
-            element: <Technology />,
+            element: <PageTransition />,
+            children: [{ index: true, element: <Technology /> }],
           },
         ],
       },

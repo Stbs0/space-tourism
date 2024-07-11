@@ -6,7 +6,7 @@ const BackgroundWrapper = () => {
   const backgroundClass = getBackgroundClass(location.pathname);
 // Todo: make the transtion smooth between pages
   return (
-    <div className={`min-h-screen bg-cover transition-all duration-300 ${backgroundClass}`}>
+    <div className={`min-h-screen bg-cover flex flex-col ${backgroundClass}`}>
       <Outlet />
     </div>
   );
