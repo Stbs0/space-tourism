@@ -14,6 +14,7 @@ const PageTransition = () => {
         animate={{ opacity: 1}}
         exit={{ opacity: 1}}
         transition={{ duration: 0.6 }}
+        style={{flexGrow: 1}}
         >
         <Outlet />
       </motion.div>

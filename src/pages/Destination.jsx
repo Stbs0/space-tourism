@@ -13,7 +13,7 @@ const Destination = () => {
   console.log(planets);
   console.log(planets[planetIndex]);
   return (
-    <main className='text-white  p-6 sm:p-10 lg:px-[0] min-h-full mx-auto  py-[48px]'>
+    <main className='text-white container  p-6 sm:p-10 lg:px-[0] min-h-full mx-auto  py-[48px]'>
       <div className='flex  flex-col gap-6 min-h-full max-w-[1100px]'>
         <h3 className='font-barlow text-center tracking-[15%] sm:text-left sm:text-[20px] lg:text-[28px]'>
           <span className='inline-block mr-6 opacity-25 font-bold'>01</span>PICK

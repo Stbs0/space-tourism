@@ -1,10 +1,11 @@
 import React from "react";
 
-function Circul({ isActive }) {
+function Circul({ setCrewIndex, index, crewIndex }) {
   return (
     <div
+      onClick={() => setCrewIndex(index)}
       className={`size-[10px] bg-white rounded-full ${
-        isActive ? "opacity-[17.44%]" : "opacity-100"
+        index === crewIndex ? "opacity-100" : "opacity-[17.44%]"
       }`}></div>
   );
 }
