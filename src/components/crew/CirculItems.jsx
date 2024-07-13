@@ -2,7 +2,7 @@ import React from "react";
 import Circul from "./Circul";
 function CirculItems({ setCrewIndex, crewIndex }) {
   return (
-    <div className='flex gap-4 justify-center lg:place-self-start '>
+    <div className='flex gap-4 justify-center lg:place-self-start lg:gap-10 '>
       <Circul
         setCrewIndex={setCrewIndex}
         crewIndex={crewIndex}

@@ -2,9 +2,9 @@ import React from "react";
 
 const CrewImg = ({ crew }) => {
   return (
-    <div className=' relative   '>
+    <div className=' grid  '>
       <img
-        className='transparent-gradient '
+        className='transparent-gradient   '
         src={crew.images.webp}
         alt=''
       />
