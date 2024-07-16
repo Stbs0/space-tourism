@@ -7,7 +7,7 @@ export function Circul({ setTechnologyIndex, technologyIndex, number }) {
         technologyIndex ===( number - 1)
           ? "bg-white text-dark-navy "
           : "bg-transparent text-white"
-      } size-10`}>
+      } size-10 border border-white/25`}>
       {number}
     </button>
   );
