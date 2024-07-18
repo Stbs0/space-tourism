@@ -14,8 +14,11 @@ const Destination = () => {
   console.log(planets[planetIndex]);
   return (
     <main className='text-white container  p-6 sm:p-10 lg:px-[0] min-h-full mx-auto  py-[48px]'>
-      <div className='flex  flex-col gap-6 min-h-full max-w-[1100px]'>
-        <MainHeader label={"PICK YOUR DESTINATION"} number={"01"} />
+      <div className='grid  grid-cols-1 gap-6 min-h-full '>
+        <MainHeader
+          label={"PICK YOUR DESTINATION"}
+          number={"01"}
+        />
 
         <div className='flex gap-8 flex-col lg:flex-row '>
           <PlanetImg image={planets[planetIndex].images.webp} />

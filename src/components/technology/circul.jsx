@@ -3,7 +3,7 @@ export function Circul({ setTechnologyIndex, technologyIndex, number }) {
   return (
     <button
       onClick={() => setTechnologyIndex(number - 1)}
-      className={`rounded-full ${
+      className={`rounded-full lg:size-20 border-white ${
         technologyIndex ===( number - 1)
           ? "bg-white text-dark-navy "
           : "bg-transparent text-white"
